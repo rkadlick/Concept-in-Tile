@@ -1,0 +1,284 @@
+/* Row Color */
+.contRow, .abtRow, .bsRow, .hoursRow{
+    background-color: rgba(65,75,165,.8);
+    margin: 0;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+.fullRow{
+    max-width: 100%;
+}
+
+/* Images */
+#bsImg, #floorsImg {
+    max-height: 100%;
+    max-width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px 5px 5px;
+
+}
+
+/* Text */
+
+.title{
+    text-decoration: underline;
+}
+
+/* SVG Header Animations */
+
+	.st0{fill:#3954A1;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#FDDEB3;}
+	.st4{fill:#3C55A1;}
+	.st5{fill:#3A54A1;}
+	.st6{fill:#FBDDB3;}
+	.st7{fill:#536AAE;}
+
+.logo, .rec{
+    transition: transform .5s ease-out;
+    transform-origin: 50% 50%;
+}
+    
+.logo:hover, .rec:hover{
+    transform: scale(1.5);
+}
+    
+#recShape:hover{
+    fill: #fcddb3;
+}
+
+.svgDiv{
+    width: 40%;
+    height: 30%;
+    margin-left: 10%;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 330 900;
+  stroke-dashoffset: -813;
+  stroke-width: 11px;
+  stroke: #3954a1;
+}
+
+.text {
+  color: #000;
+  font-size: 3.5em;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -58px;
+    left: 4%;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 330 900;
+    stroke-dashoffset: -813;
+    stroke-width: 11px;
+  }
+  100% {
+    stroke-dasharray: 1420;
+    stroke-dashoffset: 0;
+    stroke-width: 11px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.svgName{
+    margin-top: 15%;
+}
+
+/* Navbar */
+
+.navbar-default{
+    font-size: 1.2em;
+    color: #FFDFAF;
+    background-color: #202552;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    background-color: #7a81c0;
+    color: #FFDFAF;
+}
+
+.navbar-daulft .navbar-nav>li>a:active{
+    background-color: #7a81c0;
+    color: #FFDFAF;
+}
+
+.navbar-default .navbar-brand:hover{
+    background-color: #7a81c0;
+    color: #FFDFAF;
+}
+
+.navbar-daulft .navbar-brand:active{
+    background-color: #7a81c0;
+    color: #FFDFAF;
+}
+
+.navbar{
+    color: #FFDFAF;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: none;
+}
+
+.navbar-default .navbar-brand{
+    color: #FFDFAF;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #FFDFAF;
+}
+
+
+/* Row 1 - Hours */
+
+.hoursRow{
+    padding-top: 45px; 
+}
+
+.hoursInfo{
+    background-color: rgba(255,255,255,.5);
+    margin-top: 4%; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+#hours{
+    text-align: center;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.list li{
+    padding-top: 5px;
+}
+
+#featured{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.imgLbl{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Row 2 - Services */
+
+.servicesInfo{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Row 3 - About */
+
+.abtInfo{
+    background-color: rgba(255,255,255,.5);
+    margin-top: 5%; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.misnInfo{
+    background-color: rgba(255,255,255,.5);
+    margin-top: 5%;
+    padding-bottom: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#aboutImg{
+    width: 90%;
+}
+
+/* Floors */
+
+.floorInfo{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.evenHt{
+    overflow: hidden;
+}
+
+#floorsImg1{
+    width: 30%;
+}
+
+/* Backsplashes */
+
+.bsRow{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.evenHt{
+    overflow: hidden;
+}
+
+#bsImg1{
+    width: 30%;
+}
+
+/* Bathrooms */
+
+.bathInfo{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Contact */
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #FFDFAF;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.row{
+    padding-bottom: 40px;
+}
+
+.contForm{
+    background-color: rgba(255,255,255,.5);
+    margin-top: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contInfo{
+    background-color: rgba(255,255,255,.5);
+    margin-left: 10%;
+    margin-top: 10%;
+    font-family: 'Josefin Sans', sans-serif;
+}
